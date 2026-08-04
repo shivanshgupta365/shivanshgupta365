@@ -1,0 +1,96 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Shivansh Gupta — AI systems and product engineer</title>
+  <desc id="desc">A futuristic neon mission-control interface introducing Shivansh Gupta.</desc>
+  <defs>
+    <linearGradient id="bg" x1="56" y1="12" x2="1144" y2="348" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#050816"/>
+      <stop offset="0.48" stop-color="#081225"/>
+      <stop offset="1" stop-color="#071B22"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="120" y1="90" x2="980" y2="250" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C3AED"/>
+      <stop offset="0.5" stop-color="#00E5FF"/>
+      <stop offset="1" stop-color="#37FF8B"/>
+    </linearGradient>
+    <radialGradient id="orb" cx="0" cy="0" r="1" gradientTransform="translate(1015 171) rotate(90) scale(132)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00E5FF" stop-opacity="0.24"/>
+      <stop offset="0.64" stop-color="#7C3AED" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#050816" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" stroke="#22D3EE" stroke-opacity="0.07"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+    <clipPath id="frame"><rect x="24" y="24" width="1152" height="312" rx="22"/></clipPath>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+      .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .dash { stroke-dasharray: 10 14; animation: dash 16s linear infinite; }
+      .pulse { animation: pulse 2.4s ease-in-out infinite; transform-origin: center; }
+      .scan { animation: scan 5s ease-in-out infinite; }
+      .blink { animation: blink 1.1s steps(2, jump-none) infinite; }
+      @keyframes dash { to { stroke-dashoffset: -240; } }
+      @keyframes pulse { 0%, 100% { opacity: .45; transform: scale(.96); } 50% { opacity: 1; transform: scale(1.04); } }
+      @keyframes scan { 0%, 100% { transform: translateY(-26px); opacity: 0; } 15%, 85% { opacity: .55; } 50% { transform: translateY(300px); } }
+      @keyframes blink { 50% { opacity: .25; } }
+      @media (prefers-reduced-motion: reduce) { .dash, .pulse, .scan, .blink { animation: none; } }
+    </style>
+  </defs>
+
+  <rect width="1200" height="360" rx="28" fill="url(#bg)"/>
+  <g clip-path="url(#frame)">
+    <rect x="24" y="24" width="1152" height="312" fill="url(#grid)"/>
+    <circle cx="1015" cy="171" r="132" fill="url(#orb)"/>
+    <path class="scan" d="M40 48H1160" stroke="#00E5FF" stroke-opacity="0.35" stroke-width="2" filter="url(#softGlow)"/>
+    <path d="M25 110H160L184 86H422" stroke="#7C3AED" stroke-opacity="0.36"/>
+    <path d="M776 302H962L990 274H1176" stroke="#00E5FF" stroke-opacity="0.3"/>
+    <path class="dash" d="M781 170C847 80 956 60 1056 98C1123 124 1152 184 1178 251" stroke="url(#neon)" stroke-opacity="0.7" stroke-width="2"/>
+    <path class="dash" d="M782 205C862 281 992 294 1100 229" stroke="#37FF8B" stroke-opacity="0.34"/>
+  </g>
+
+  <rect x="24.75" y="24.75" width="1150.5" height="310.5" rx="21.25" stroke="url(#neon)" stroke-opacity="0.48" stroke-width="1.5"/>
+  <path d="M54 24H168" stroke="#00E5FF" stroke-width="3"/>
+  <path d="M1032 336H1146" stroke="#37FF8B" stroke-width="3"/>
+
+  <g class="mono" font-size="12" letter-spacing="2">
+    <circle class="pulse" cx="62" cy="57" r="5" fill="#37FF8B" filter="url(#glow)"/>
+    <text x="77" y="62" fill="#8AF7B6">SYSTEM ONLINE</text>
+    <text x="980" y="62" fill="#6B8CA8">BLR // 12.9716° N</text>
+  </g>
+
+  <g class="sans">
+    <text x="72" y="135" fill="#90A7BE" font-size="17" font-weight="600" letter-spacing="5">HELLO, I ENGINEER THE NEXT LAYER</text>
+    <text x="68" y="207" fill="url(#neon)" font-size="64" font-weight="800" letter-spacing="-2" filter="url(#glow)">SHIVANSH GUPTA</text>
+    <text x="72" y="247" fill="#D8E7F5" font-size="18" font-weight="500" letter-spacing="3">AI SYSTEMS  /  PRODUCT ENGINEERING  /  OPEN SOURCE</text>
+  </g>
+
+  <g class="mono" font-size="11">
+    <rect x="72" y="278" width="164" height="29" rx="14.5" fill="#7C3AED" fill-opacity="0.13" stroke="#7C3AED" stroke-opacity="0.58"/>
+    <text x="91" y="297" fill="#C4B5FD">AGENTIC SYSTEMS</text>
+    <rect x="247" y="278" width="164" height="29" rx="14.5" fill="#00E5FF" fill-opacity="0.09" stroke="#00E5FF" stroke-opacity="0.52"/>
+    <text x="273" y="297" fill="#A5F3FC">RUNTIME + OPS</text>
+    <rect x="422" y="278" width="164" height="29" rx="14.5" fill="#37FF8B" fill-opacity="0.08" stroke="#37FF8B" stroke-opacity="0.48"/>
+    <text x="451" y="297" fill="#A7F3D0">BUILD TO SHIP</text>
+  </g>
+
+  <g transform="translate(1008 171)">
+    <circle r="94" stroke="#00E5FF" stroke-opacity="0.18"/>
+    <circle class="dash" r="72" stroke="url(#neon)" stroke-opacity="0.85" stroke-width="2"/>
+    <circle class="pulse" r="45" fill="#00E5FF" fill-opacity="0.05" stroke="#37FF8B" stroke-opacity="0.45"/>
+    <path d="M-24 0H24M0-24V24" stroke="#A5F3FC" stroke-opacity="0.72"/>
+    <circle r="7" fill="#00E5FF" filter="url(#glow)"/>
+    <text class="mono" x="-47" y="119" fill="#6B8CA8" font-size="10" letter-spacing="2">SIGNAL LOCKED</text>
+  </g>
+
+  <g class="mono" font-size="10" fill="#567187">
+    <text x="41" y="327">FRAME 01</text>
+    <text x="1072" y="327">SG // 365</text>
+    <text class="blink" x="597" y="327" fill="#00E5FF">▮</text>
+  </g>
+</svg>
