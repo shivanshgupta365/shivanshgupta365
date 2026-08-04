@@ -21,18 +21,19 @@
 
 <table>
   <tr>
-    <td width="33%" valign="top">
+    <td width="50%" valign="top">
       <h3>◈ VENTURE SIGNAL</h3>
       I build products around painful, high-leverage workflows: failed deployments, unsafe agent actions, operational context, and real-time decision systems.
     </td>
-    <td width="34%" valign="top">
+    <td width="50%" valign="top">
       <h3>◈ TECHNICAL EDGE</h3>
       Agent infrastructure, runtime control planes, simulation, evidence pipelines, local AI, full-stack product engineering, and operational UX.
     </td>
-    <td width="33%" valign="top">
+  </tr>
+  <tr>
+    <td colspan="2" valign="top">
       <h3>◈ OPERATING MODE</h3>
-      <code>research → prototype → instrument → verify → ship</code><br /><br />
-      Bengaluru, India · building globally · open to ambitious collaborations.
+      <code>research → prototype → instrument → verify → ship</code> · Bengaluru, India · building globally · open to ambitious collaborations.
     </td>
   </tr>
 </table>
@@ -68,19 +69,21 @@
 
 <table>
   <tr>
-    <td width="33%" valign="top">
+    <td colspan="2" valign="top">
       <h3><a href="https://github.com/shivanshgupta365/GroundMesh-On-Call">GroundMesh On-Call</a></h3>
       <p><strong>Evidence-first failed-deployment response.</strong> Grounds itself in runtime, code, configuration, Git, and runbooks; prepares one bounded repair; verifies it; opens a human-reviewable pull request.</p>
       <p><code>Agent Systems</code> <code>Runtime Evidence</code> <code>GitHub Automation</code></p>
       <a href="https://groundmesh-oncall.netlify.app/"><img src="https://img.shields.io/badge/ENTER_INCIDENT_ROOM-CBFF2E?style=for-the-badge&amp;logo=netlify&amp;logoColor=050611" alt="Launch GroundMesh On-Call" /></a>
     </td>
-    <td width="34%" valign="top">
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
       <h3><a href="https://github.com/shivanshgupta365/RiskDelta-AI">RiskDelta AI</a></h3>
       <p><strong>Autonomous AI runtime control plane.</strong> Connects traces, policy hits, risk scoring, intervention, and operator evidence before unsafe agent behavior reaches production.</p>
       <p><code>TypeScript</code> <code>LLMOps</code> <code>Policy Engine</code></p>
       <a href="https://riskdelta-ai.vercel.app"><img src="https://img.shields.io/badge/OPEN_CONTROL_PLANE-FF2BD6?style=for-the-badge&amp;logo=vercel&amp;logoColor=white" alt="Launch RiskDelta AI" /></a>
     </td>
-    <td width="33%" valign="top">
+    <td width="50%" valign="top">
       <h3><a href="https://github.com/shivanshgupta365/GroundControl">GroundControl</a></h3>
       <p><strong>Cinematic airport digital twin.</strong> Simulates 600 passengers, live disruptions, aircraft operations, and a deterministic optimizer inside an interactive 3D command surface.</p>
       <p><code>Next.js</code> <code>React Three Fiber</code> <code>Simulation</code></p>
@@ -93,19 +96,21 @@
 
 <table>
   <tr>
-    <td width="33%" valign="top">
+    <td width="50%" valign="top">
       <h3><a href="https://github.com/shivanshgupta365/Commonstate">Commonstate</a></h3>
       <p><strong>Operational context control plane</strong> that keeps humans and agents working from the same configurable, verified state.</p>
       <p><code>Enterprise AI</code> <code>Agent Memory</code> <code>Context Engineering</code></p>
       <a href="https://commonstate.vercel.app"><img src="https://img.shields.io/badge/EXPLORE-LIVE-7C3AED?style=flat-square&amp;logo=vercel&amp;logoColor=white" alt="Launch Commonstate" /></a>
     </td>
-    <td width="34%" valign="top">
+    <td width="50%" valign="top">
       <h3><a href="https://github.com/shivanshgupta365/BalconyBuddy-AI">BalconyBuddy AI</a></h3>
       <p><strong>Local sensor-fusion garden intelligence</strong> for Arduino that stores evidence in SQLite, derives trends, detects contradictions, and recommends actions.</p>
       <p><code>Python</code> <code>Arduino</code> <code>SQLite</code> <code>Edge AI</code></p>
       <a href="https://github.com/shivanshgupta365/BalconyBuddy-AI"><img src="https://img.shields.io/badge/VIEW-SOURCE-3DFF8F?style=flat-square&amp;logo=github&amp;logoColor=050611" alt="View BalconyBuddy AI" /></a>
     </td>
-    <td width="33%" valign="top">
+  </tr>
+  <tr>
+    <td colspan="2" valign="top">
       <h3><a href="https://github.com/shivanshgupta365/Lantern-Windroot-Anime">Lantern Windroot</a></h3>
       <p><strong>Procedural fantasy-anime short</strong> rendered in real time with deterministic cinematography, generated audio, narration, and film controls.</p>
       <p><code>WebGL</code> <code>React Three Fiber</code> <code>Creative Coding</code></p>
@@ -147,17 +152,19 @@
 
 <table>
   <tr>
-    <td width="33%" valign="top">
+    <td colspan="2" valign="top">
       <h3>✓ docsify #2772</h3>
       <p>Added a configurable right sidebar to the documentation framework.</p>
       <a href="https://github.com/docsifyjs/docsify/pull/2772"><img src="https://img.shields.io/badge/MERGED-UPSTREAM-3DFF8F?style=for-the-badge&amp;logo=github&amp;logoColor=050611" alt="docsify pull request 2772 merged upstream" /></a>
     </td>
-    <td width="34%" valign="top">
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
       <h3>✓ Caspian SDK #21</h3>
       <p>Added explicit TypeScript quality checks to the pull-request template.</p>
       <a href="https://github.com/TryCaspian/caspian-sdk/pull/21"><img src="https://img.shields.io/badge/MERGED-UPSTREAM-3DFF8F?style=for-the-badge&amp;logo=github&amp;logoColor=050611" alt="Caspian SDK pull request 21 merged upstream" /></a>
     </td>
-    <td width="33%" valign="top">
+    <td width="50%" valign="top">
       <h3>✓ Caspian SDK #18</h3>
       <p>Corrected the Python onboarding polling reference for new SDK users.</p>
       <a href="https://github.com/TryCaspian/caspian-sdk/pull/18"><img src="https://img.shields.io/badge/MERGED-UPSTREAM-3DFF8F?style=for-the-badge&amp;logo=github&amp;logoColor=050611" alt="Caspian SDK pull request 18 merged upstream" /></a>
