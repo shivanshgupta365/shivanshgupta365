@@ -1,0 +1,52 @@
+name: Generate profile visuals
+
+on:
+  schedule:
+    - cron: "17 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-visuals-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out profile source
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
+
+      - name: Generate 3D contribution skyline
+        uses: yoshi389111/github-profile-3d-contrib@9e3f937195cf840d364388973f73e3c4b3753586
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+
+      - name: Generate light and dark contribution snakes
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg?color_snake=#7C3AED&color_dots=#ebedf0,#d8b4fe,#c084fc,#22d3ee,#4ade80
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=#00E5FF&color_dots=#111827,#312E81,#7C3AED,#00B8D9,#3DFF8F
+
+      - name: Stage the public visual bundle
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s profile-3d-contrib/profile-night-rainbow.svg
+          test -s dist/github-snake.svg
+          test -s dist/github-snake-dark.svg
+          cp profile-3d-contrib/profile-night-rainbow.svg dist/github-contribution-3d.svg
+
+      - name: Publish generated assets to the output branch
+        uses: crazy-max/ghaction-github-pages@df5cc2bfa78282ded844b354faee141f06b41865
+        with:
+          build_dir: dist
+          target_branch: output
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,34 @@
+<svg width="1200" height="260" viewBox="0 0 1200 260" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Shivansh Gupta system-building loop</title>
+  <desc id="desc">An animated map connecting research, agents, policy, evidence, product, and shipping.</desc>
+  <defs>
+    <linearGradient id="bg" x1="20" y1="20" x2="1180" y2="240" gradientUnits="userSpaceOnUse"><stop stop-color="#050611"/><stop offset=".55" stop-color="#0A071C"/><stop offset="1" stop-color="#03161A"/></linearGradient>
+    <linearGradient id="line" x1="84" y1="130" x2="1116" y2="130" gradientUnits="userSpaceOnUse"><stop stop-color="#FF2BD6"/><stop offset=".5" stop-color="#7C3AED"/><stop offset=".75" stop-color="#00E5FF"/><stop offset="1" stop-color="#3DFF8F"/></linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" stroke="#00E5FF" stroke-opacity=".045"/></pattern>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+      .flow { stroke-dasharray: 8 13; animation: flow 10s linear infinite; }
+      .pulse { animation: pulse 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      .p2 { animation-delay: .45s; }.p3 { animation-delay: .9s; }.p4 { animation-delay: 1.35s; }.p5 { animation-delay: 1.8s; }
+      @keyframes flow { to { stroke-dashoffset: -210; } }
+      @keyframes pulse { 0%,100% { opacity:.45; transform:scale(.9); } 50% { opacity:1; transform:scale(1.14); } }
+      @media (prefers-reduced-motion: reduce) { .flow,.pulse { animation:none; } }
+    </style>
+  </defs>
+  <rect width="1200" height="260" rx="22" fill="url(#bg)"/>
+  <rect x="1" y="1" width="1198" height="258" rx="21" stroke="#00E5FF" stroke-opacity=".22"/>
+  <rect x="18" y="18" width="1164" height="224" rx="14" fill="url(#grid)"/>
+  <text class="mono" x="44" y="50" fill="#71869A" font-size="11" letter-spacing="2">SYSTEM BUILD VECTOR // FROM AMBIGUITY TO VERIFIED REALITY</text>
+  <path class="flow" d="M108 134H1092" stroke="url(#line)" stroke-width="3" opacity=".78"/>
+  <path d="M108 134H1092" stroke="url(#line)" stroke-width="12" opacity=".05" filter="url(#glow)"/>
+
+  <g class="mono" text-anchor="middle">
+    <g transform="translate(108 134)"><circle class="pulse" r="29" fill="#FF2BD6" fill-opacity=".1" stroke="#FF2BD6"/><circle r="6" fill="#FF2BD6" filter="url(#glow)"/><text y="60" fill="#FF9BEA" font-size="12">RESEARCH</text><text y="78" fill="#61758A" font-size="9">FIND THE SIGNAL</text></g>
+    <g transform="translate(354 134)"><circle class="pulse p2" r="29" fill="#7C3AED" fill-opacity=".12" stroke="#7C3AED"/><circle r="6" fill="#A78BFA" filter="url(#glow)"/><text y="60" fill="#C4B5FD" font-size="12">AGENT SYSTEMS</text><text y="78" fill="#61758A" font-size="9">REASON + ACT</text></g>
+    <g transform="translate(600 134)"><circle class="pulse p3" r="29" fill="#7C3AED" fill-opacity=".12" stroke="#00E5FF"/><circle r="6" fill="#00E5FF" filter="url(#glow)"/><text y="60" fill="#9AF5FF" font-size="12">POLICY + EVIDENCE</text><text y="78" fill="#61758A" font-size="9">BOUND THE RUNTIME</text></g>
+    <g transform="translate(846 134)"><circle class="pulse p4" r="29" fill="#00E5FF" fill-opacity=".1" stroke="#00E5FF"/><circle r="6" fill="#00E5FF" filter="url(#glow)"/><text y="60" fill="#9AF5FF" font-size="12">VERIFIED PRODUCT</text><text y="78" fill="#61758A" font-size="9">PROVE THE LOOP</text></g>
+    <g transform="translate(1092 134)"><circle class="pulse p5" r="29" fill="#3DFF8F" fill-opacity=".1" stroke="#3DFF8F"/><circle r="6" fill="#3DFF8F" filter="url(#glow)"/><text y="60" fill="#A7F3D0" font-size="12">SHIP</text><text y="78" fill="#61758A" font-size="9">MAKE IT REAL</text></g>
+  </g>
+  <g class="mono" fill="#53687B" font-size="9"><text x="219" y="122">01</text><text x="465" y="122">02</text><text x="711" y="122">03</text><text x="957" y="122">04</text></g>
+</svg>
